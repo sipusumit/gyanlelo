@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const NavBar = () => {
   return (
     <div className="flex flex-col md:flex-row md:justify-start justify-between items-center py-2">
@@ -10,10 +12,18 @@ const NavBar = () => {
       <span className="ml-3 text-xl">GyanLelo</span>
     </a>
     <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-      <a className="mr-5 hover:text-gray-900">Home</a>
-      <a className="mr-5 hover:text-gray-900">Books</a>
-      <a className="mr-5 hover:text-gray-900">About Us</a>
-      <a className="mr-5 hover:text-gray-900">Contact Us</a>
+      <Link href={"/"}>
+        <a className="mr-5 hover:text-gray-900">Home</a>
+      </Link>
+      <Link href={"/books"}>
+        <a className="mr-5 hover:text-gray-900">Books</a>
+      </Link>
+      <Link href={"/about"}>
+        <a className="mr-5 hover:text-gray-900">About Us</a>
+      </Link>
+      <Link href={"/contact"}>
+        <a className="mr-5 hover:text-gray-900">Contact Us</a>
+      </Link>
     </nav>
   </div>
 </header>
