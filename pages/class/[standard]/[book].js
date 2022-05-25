@@ -1,12 +1,22 @@
+import Footer from "../../../components/Footer";
+import NavBar from "../../../components/NavBar";
+
 export async function getServerSideProps(context){
   const book = context.params.book;
   const standard = parseInt(context.params.standard);
-  if(isNaN(standard)){
+  if(isNaN(standard) || !/^\d+$/.test(context.params.standard)){
       return {notFound: true}
   }
+
+  let response = await fetch(`http://localhost:3000/api/${standard}/${book}`)
+  let data = await response.json()
+  if(!data.success){
+    return{
+      notFound: true
+    }
+  }
   return {props:{
-      "class": standard,
-      "book": book,
+      "response": data
   }}
 }
 
@@ -14,7 +24,11 @@ export async function getServerSideProps(context){
 
 const Book = (props) => {
   return (
-    <div>Book: {props["book"]}  Class: {props["class"]}</div>
+    <div>
+      <NavBar/>
+      <div>Res: {JSON.stringify(props["response"])}</div>
+      <Footer/>
+    </div>
   )
 }
 
