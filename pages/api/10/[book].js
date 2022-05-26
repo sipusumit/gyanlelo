@@ -10,12 +10,13 @@ async function getPosts(req, res){
         let {db} = await connectTODatabase();
 
         let result = await db.collection(req.query.book)
-            .find({}).toArray()
+            .find({ch:"1"}).toArray()
         return res.json({
             message: JSON.parse(JSON.stringify(result)),
             success: true,
         })
     }catch (error){
+        console.log(error);
         return res.json({
             message: new Error(error).message,
             success: false
