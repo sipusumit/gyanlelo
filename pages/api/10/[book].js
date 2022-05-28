@@ -7,8 +7,8 @@ export default async function handler(req, res){
 
 async function getPosts(req, res){
     try{
-        let {db} = await connectTODatabase();
-
+        let {client} = await connectTODatabase();
+        let db = client.db('class10')
         let result = await db.collection(req.query.book)
             .find({ch:"1"}).toArray()
         return res.json({
