@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import {getUrl} from '../lib/url'
+import getUrl from '../lib/url'
 import React from 'react'
 import Books from '../components/Books'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 
 const books = (props) => {
-  console.log(props)
   return (
     <div>
         <NavBar/>

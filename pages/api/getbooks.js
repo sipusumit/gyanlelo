@@ -14,7 +14,6 @@ export default async function handler(req, res){
             })
             break;
     }
-    return getBooks(req, res)
 }
 
 async function getBooks(req, res){
