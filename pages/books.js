@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {getUrl} from '../lib/url'
 import React from 'react'
 import Books from '../components/Books'
 import Footer from '../components/Footer'
@@ -18,7 +19,7 @@ const books = (props) => {
 export default books
 
 export async function getServerSideProps(context){
-  const res = await fetch('http://localhost:3000/api/getbooks',{
+  const res = await fetch(`${getUrl()}/api/getbooks`,{
     method:"POST",
     body: JSON.stringify({db:"class10"})
   })
