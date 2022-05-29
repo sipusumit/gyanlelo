@@ -106,7 +106,7 @@ const About = () => {
                 <Image width={192} height={192} alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200"/>
                   <div className="flex-grow sm:pl-8">
                     <h2 className="title-font font-medium text-lg text-gray-900">Aarzoo Suman</h2>
-                    <h3 className="text-gray-500 mb-3">No Contribution Free credit</h3>
+                    <h3 className="text-gray-500 mb-3">Editor</h3>
                     <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                     <span className="inline-flex">
                       <a className="text-gray-500">
