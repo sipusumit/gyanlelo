@@ -20,7 +20,7 @@ const About = () => {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <Image width={192} height={192} alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200"/>
+                <Image width={192} height={192} alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="/sumit.webp"/>
                   <div className="flex-grow sm:pl-8">
                     <h2 className="title-font font-medium text-lg text-gray-900">Sumit Kumar</h2>
                     <h3 className="text-gray-500 mb-3">Owner</h3>
@@ -48,7 +48,7 @@ const About = () => {
 
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <Image width={192} height={192} alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200"/>
+                <Image width={192} height={192} alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="/ayush.webp"/>
                   <div className="flex-grow sm:pl-8">
                     <h2 className="title-font font-medium text-lg text-gray-900">Ayush Kumar</h2>
                     <h3 className="text-gray-500 mb-3">UI Desginer</h3>
@@ -76,7 +76,7 @@ const About = () => {
 
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <Image width={192} height={192} alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200"/>
+                <Image width={192} height={192} alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="/aditya.jpg"/>
                   <div className="flex-grow sm:pl-8">
                     <h2 className="title-font font-medium text-lg text-gray-900">Aditya Kumar</h2>
                     <h3 className="text-gray-500 mb-3">Content Provider</h3>
@@ -103,10 +103,9 @@ const About = () => {
             </div>
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <Image width={192} height={192} alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200"/>
+                <Image width={192} height={192} alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="/aarzoo2.jpg"/>
                   <div className="flex-grow sm:pl-8">
                     <h2 className="title-font font-medium text-lg text-gray-900">Aarzoo Suman</h2>
-                    <h3 className="text-gray-500 mb-3">Editor</h3>
                     <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                     <span className="inline-flex">
                       <a className="text-gray-500">
