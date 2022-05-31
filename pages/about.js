@@ -103,7 +103,7 @@ const About = () => {
             </div>
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <Image width={192} height={192} alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="/aarzoo2.jpg"/>
+                <Image width={192} height={192} alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="/aarzoo.jpg"/>
                   <div className="flex-grow sm:pl-8">
                     <h2 className="title-font font-medium text-lg text-gray-900">Aarzoo Suman</h2>
                     <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
