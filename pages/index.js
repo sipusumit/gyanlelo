@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
 
 export default function Home() {
   return (
@@ -9,12 +7,7 @@ export default function Home() {
         <title>GyanLelo</title>
         <meta name="description" content="GyanLelo | A free Ncert solutions for class 7 to 10" />
       </Head>
-
-      <NavBar />
-
-      CONTENT HERE
-
-      <Footer />
+      Go Fuck Yourself
     </div>
   )
 }
